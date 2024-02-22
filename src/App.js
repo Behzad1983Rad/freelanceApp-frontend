@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import axios from "axios"
 import './App.css';
+import {useEffect, useState} from 'react'
 
 function App() {
+const [jobsListing, setJobsListing] = useState()
+async function getJobs() {
+  const jobs =  await axios.get(`${process.env.REACT_APP_BACKEND_URL}/jobs`)
+  const response = await jobs.JSON()
+  setJobsListing(response)
+  console.log(response)
+}
+useEffect(() => {
+  getJobs()
+})
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
     </div>
-  );
+  )
 }
 
 export default App;
