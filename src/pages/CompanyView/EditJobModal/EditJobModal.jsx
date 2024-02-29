@@ -34,14 +34,16 @@ export default function EditJobModal({ show, handleClose, handleSave, job }) {
         }));
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         handleSave(formData);
     };
 
     return (
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} style={{
+            scale: "0.9"
+
+        }}>
             <Modal.Header closeButton>
                 <Modal.Title>Edit Job</Modal.Title>
             </Modal.Header>
@@ -86,7 +88,7 @@ export default function EditJobModal({ show, handleClose, handleSave, job }) {
                         <Form.Label>Application Deadline</Form.Label>
                         <Form.Control type="date" name="application_deadline" value={formData.application_deadline} onChange={handleChange} />
                     </Form.Group>
-
+                    <br />
                     <Button variant="primary" type="submit">
                         Save 
                     </Button>

@@ -76,8 +76,8 @@ export default function SingleJobView() {
 
     return (
         <div>
-            <Card>
-                <Card.Body>
+            <Card style={{backgroundColor:"#B6FF9B"}}>
+                <Card.Body style={{backgroundColor:"#B6FF9B"}}>
                     <Card.Title>{singleJob.title}</Card.Title>                
                 </Card.Body>
                 <Card.Footer>
