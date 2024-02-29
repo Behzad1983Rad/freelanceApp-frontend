@@ -4,7 +4,7 @@ export default function AboutUs() {
     <div style={{ 
       display: 'flex',
       justifyContent: 'center',
-      marginTop: '4%',
+      // paddingTop: '4%',
       gap: '4%'
       }}>
           <Card style={{ 
@@ -13,10 +13,10 @@ export default function AboutUs() {
             
             }}>
            
-            <Card.Body style={{backgroundColor: "#B6FF9B"}}>
+            <Card.Body style={{backgroundColor: "#B6FF9B" , paddingTop: '2%'}}>
               <Card.Title>About Me</Card.Title>
               <Card.Text>
-              Hi there! I'm Behzad, a passionate software engineer with a knack for building innovative web applications. My journey into the world of technology began when I pursued a rigorous curriculum in Software Engineering at GA Bootcamp, where I honed my skills and developed a strong foundation in programming principles.
+              Hi there! I'm <strong>Behzad</strong>, a passionate software engineer with a knack for building innovative web applications. My journey into the world of technology began when I pursued a rigorous curriculum in Software Engineering at GA Bootcamp, where I honed my skills and developed a strong foundation in programming principles.
 
 For my final project, I embarked on the exciting challenge of creating a dynamic web application that seamlessly combines the power of Python, Django, React, and PostgreSQL. Leveraging the versatility of these technologies, I crafted an intuitive platform that empowers companies to manage profiles, list jobs, and collaborate efficiently.
 
