@@ -27,7 +27,7 @@ useEffect(() => {
   
 } , [])
   return (
-    <div style={{backgroundColor:"#B6FF9B" , paddingTop:"3%"       
+    <div style={{backgroundColor:"#B6FF9B" ,paddingTop:"1%"  , marginLeft: "4%",  marginTop: "4%", marginRight: "4%"      
     }} >
       {/* <h3 style={{ marginLeft: "1%"}}>Jobs List</h3>
     <ol>

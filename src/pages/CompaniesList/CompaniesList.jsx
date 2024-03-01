@@ -34,7 +34,8 @@ export default function CompaniesList() {
     <>
   
 
-        <div style={{backgroundColor:"#B6FF9B" , paddingTop:"3%"    
+        <div style={{backgroundColor:"#B6FF9B" , paddingTop:"1%"  , marginLeft: "4%",  marginTop: "4%", marginRight: "4%"
+        
     }}>
         {/* <ul>
             {companiesListing && companiesListing.map((listing) => (
@@ -45,7 +46,7 @@ export default function CompaniesList() {
                 </li>
             ))}
         </ul> */}
-        <h3 style={{ marginLeft: "1%"}}>Profiles List</h3>
+        <h3 style={{ marginLeft: "1%"}}>Profile List</h3>
         <ListGroup variant="flush" >
     {companiesListing && companiesListing.map((listing) => (
       <ListGroup.Item key={listing.id} style={{backgroundColor:"#B6FF9B"}}> 
