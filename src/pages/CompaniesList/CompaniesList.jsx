@@ -1,7 +1,7 @@
 import axios from "axios"
 import {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
-// import { ListGroup } from "react-bootstrap"
+import { ListGroup } from "react-bootstrap"
 
 export default function CompaniesList() {
 
@@ -36,7 +36,7 @@ export default function CompaniesList() {
 
         <div style={{backgroundColor:"#B6FF9B" , paddingTop:"3%"    
     }}>
-        <ul>
+        {/* <ul>
             {companiesListing && companiesListing.map((listing) => (
                 <li key={listing.id}>
                     <Link to={`/companies/${listing.id}`}>
@@ -44,18 +44,18 @@ export default function CompaniesList() {
                     </Link>
                 </li>
             ))}
-        </ul>
-        {/* <h3 style={{ marginLeft: "1%"}}>Profiles List</h3>
+        </ul> */}
+        <h3 style={{ marginLeft: "1%"}}>Profiles List</h3>
         <ListGroup variant="flush" >
     {companiesListing && companiesListing.map((listing) => (
-      <ListGroup.Item style={{backgroundColor:"#B6FF9B"}}> 
+      <ListGroup.Item key={listing.id} style={{backgroundColor:"#B6FF9B"}}> 
         <Link to={`/companies/${listing.id}`}>
                     {listing.name}
         </Link>
       </ListGroup.Item>
     ))}
-     */}
-    {/* </ListGroup> */}
+    
+    </ListGroup>
     </div>
     </>
   )

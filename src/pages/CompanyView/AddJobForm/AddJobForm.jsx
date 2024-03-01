@@ -76,7 +76,7 @@ export default function AddJobForm() {
         name="company"
         value={formData.company}
       >
-        <option value="">Select Company</option>
+        <option value="">Select Employee</option>
         {companies.map(company => (
           <option key={company.id} value={company.url}>{company.name}</option>
         ))}

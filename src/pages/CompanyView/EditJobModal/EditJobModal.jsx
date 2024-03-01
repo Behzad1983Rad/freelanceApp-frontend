@@ -50,14 +50,14 @@ export default function EditJobModal({ show, handleClose, handleSave, job }) {
             <Modal.Body>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="formCompany">
-                        <Form.Label>Select Company</Form.Label>
+                        <Form.Label>Select Employee</Form.Label>
                         <Form.Select
                             className="mt-1"
                             onChange={handleChange}
                             name="company"
                             value={formData.company}
                         >
-                            <option value="default">Select Company</option>
+                            <option value="default">Select Employee</option>
                             {companies.map(company => (
                                 <option key={company.id} value={company.url}>{company.name}</option>
                             ))}
@@ -91,14 +91,17 @@ export default function EditJobModal({ show, handleClose, handleSave, job }) {
                     <br />
                     <Button variant="primary" type="submit">
                         Save 
+                    </Button> &nbsp;
+                    <Button variant="dark" onClick={handleClose}>
+                    Close
                     </Button>
                 </Form>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+            {/* <Modal.Footer>
+                <Button variant="dark" onClick={handleClose}>
                     Close
                 </Button>
-            </Modal.Footer>
+            </Modal.Footer> */}
         </Modal>
     );
 }

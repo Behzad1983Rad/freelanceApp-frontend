@@ -78,13 +78,13 @@ export default function SingleJobView() {
         <div>
             <Card style={{backgroundColor:"#B6FF9B"}}>
                 <Card.Body style={{backgroundColor:"#B6FF9B"}}>
-                    <Card.Title>{singleJob.title}</Card.Title>                
+                    <Card.Title><h3 style={{color:"green"}}>{singleJob.title}</h3></Card.Title>                
                 </Card.Body>
                 <Card.Footer>
-                    <Card.Text>Description: {singleJob.description}</Card.Text>
-                    <Card.Text>Location: {singleJob.location}</Card.Text>
-                    <Card.Text>Salary: {singleJob.salary}</Card.Text>
-                    <Card.Text>Application Deadline: {singleJob.application_deadline}</Card.Text>
+                    <Card.Text><strong style={{color:"green"}}>Description:</strong> {singleJob.description}</Card.Text>
+                    <Card.Text><strong style={{color:"green"}}>Location:</strong> {singleJob.location}</Card.Text>
+                    <Card.Text><strong style={{color:"green"}}>Salary:</strong> {singleJob.salary}</Card.Text>
+                    <Card.Text><strong style={{color:"green"}}>Application Deadline:</strong> {singleJob.application_deadline}</Card.Text>
                     <Button variant="outline-danger" onClick={handleDelete}>Delete</Button> &nbsp;
                     <Button variant="outline-primary" onClick={handleEdit}>Edit</Button>
                 </Card.Footer>

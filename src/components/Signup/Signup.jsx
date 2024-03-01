@@ -22,7 +22,7 @@ export default function Signup({ onSignupSuccess }) {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
       });
-
+      console.log(data)
       localStorage.setItem("access_token", data.access);
       localStorage.setItem("refresh_token", data.refresh);
       axios.defaults.headers.common["Authorization"] = `Bearer ${data["access"]}`;

@@ -4,8 +4,10 @@ export default function AboutUs() {
     <div style={{ 
       display: 'flex',
       justifyContent: 'center',
-      // paddingTop: '4%',
-      gap: '4%'
+      paddingTop: '3%',
+      gap: '4%',
+      paddingLeft: "4%",
+      paddingRight: "4%"
       }}>
           <Card style={{ 
             width: '69rem',
@@ -14,9 +16,9 @@ export default function AboutUs() {
             }}>
            
             <Card.Body style={{backgroundColor: "#B6FF9B" , paddingTop: '2%'}}>
-              <Card.Title>About Me</Card.Title>
+              <Card.Title><h3 style={{color:"green"}}>About Me</h3></Card.Title> <br />
               <Card.Text>
-              Hi there! I'm <strong>Behzad</strong>, a passionate software engineer with a knack for building innovative web applications. My journey into the world of technology began when I pursued a rigorous curriculum in Software Engineering at GA Bootcamp, where I honed my skills and developed a strong foundation in programming principles.
+              Hi there! I'm <strong style={{color:"green"}}>Behzad</strong>, a passionate software engineer with a knack for building innovative web applications. My journey into the world of technology began when I pursued a rigorous curriculum in Software Engineering at GA Bootcamp, where I honed my skills and developed a strong foundation in programming principles.
 
 For my final project, I embarked on the exciting challenge of creating a dynamic web application that seamlessly combines the power of Python, Django, React, and PostgreSQL. Leveraging the versatility of these technologies, I crafted an intuitive platform that empowers companies to manage profiles, list jobs, and collaborate efficiently.
 
@@ -24,7 +26,7 @@ Utilizing Django's REST framework, I ensured seamless communication between the 
 
 Throughout the development process, I maintained a keen focus on user experience and functionality, striving to deliver a polished product that exceeds expectations. With Bootstrap, I crafted responsive and visually appealing interfaces, ensuring a seamless experience across devices.
 
-I'm excited to continue my journey in the world of software engineering, constantly seeking new challenges and opportunities for growth. Let's connect on  <a href="https://www.linkedin.com/in/behzad-radgizadeh/">LinkedIn</a> where you can learn more about my professional journey and projects.              </Card.Text>
+I'm excited to continue my journey in the world of software engineering, constantly seeking new challenges and opportunities for growth. Let's connect on  <a href="https://www.linkedin.com/in/behzad-radgizadeh/" style={{color:"green" , textDecoration:"none"}}><strong>LinkedIn</strong></a> where you can learn more about my professional journey and projects.              </Card.Text>
               
             </Card.Body>
           </Card>

@@ -32,11 +32,11 @@ useEffect(() => {
                 { isAuth ? (
                   <>
                 <Nav.Link as={Link} to="/jobs" onClick={handleClick}><span style={{color:"green"}}>Jobs</span></Nav.Link>
-                <Nav.Link as={Link} to="/companies" onClick={handleClick}><span style={{color:"green"}}>Profile</span></Nav.Link>
+                <Nav.Link as={Link} to="/companies" onClick={handleClick}><span style={{color:"green"}}>Employees</span></Nav.Link>
                 <Nav.Link as={Link} to="/aboutus" onClick={handleClick}><span style={{color:"green"}}>About Us</span></Nav.Link>
                 <Nav.Link as={Link} to="/contactus" onClick={handleClick}><span style={{color:"green"}}>Contact Us</span></Nav.Link>
                 {/* <Nav.Link as={Link} to="/companyprofile" onClick={handleClick}>Profile</Nav.Link> */}
-                <Nav.Link as={Link} to="/companies/add" onClick={handleClick}><span style={{color:"green"}}>Add Profile</span></Nav.Link>
+                <Nav.Link as={Link} to="/companies/add" onClick={handleClick}><span style={{color:"green"}}>Add Employee</span></Nav.Link>
                 <Nav.Link as={Link} to="/jobs/add" onClick={handleClick}><span style={{color:"green"}}>Add Jobs</span></Nav.Link>
                 <Nav.Link as={Link} to="/logout" onClick={handleClick}><span style={{color:"green"}}>Log Out</span></Nav.Link>
                 </>

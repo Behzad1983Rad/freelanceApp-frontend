@@ -151,17 +151,17 @@ export default function CompanyProfile() {
     scale: "0.86"
   }}>
   <Card>
-    <Card.Body style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' , backgroundColor:"#B6FF9B"}}>
+    <Card.Body style={{ display: 'flex', flexDirection: 'row' , backgroundColor:"#B6FF9B"}}>
       <div>
-        <Card.Title>{singleProfile.name}</Card.Title> <br />
+        <Card.Title><strong style={{color:"green"}}>{singleProfile.name}</strong></Card.Title> <br />
         {photoUrl && (
           <Col xs={6} md={4}>
             <Image src={photoUrl} alt="Profile" style={{ maxWidth: '100%', maxHeight: '150px' }} rounded />
           </Col>
         )}
        <br />
-        <Card.Text><strong>Name:</strong> {singleProfile.name}</Card.Text> 
-        <Card.Text><strong>Website: </strong>{singleProfile.website}</Card.Text>
+        <Card.Text><strong style={{color:"green"}}>Name:</strong> {singleProfile.name}</Card.Text> 
+        <Card.Text><strong style={{color:"green"}}>Website: </strong>{singleProfile.website}</Card.Text>
         <div>
           <Button variant="outline-danger" onClick={handleDelete}>Delete</Button> &nbsp;
           <Button variant="outline-primary" onClick={handleEdit}>Edit</Button> &nbsp;
@@ -182,7 +182,7 @@ export default function CompanyProfile() {
         </div>
       </div>
       <div style={{ textAlign: 'right' }}>
-      <Card.Text style={{ textAlign: 'left' , marginTop:"4px"}}><strong>Bio:</strong> <br /> <br />{singleProfile.description}</Card.Text>
+      <Card.Text style={{ textAlign: 'left' , marginTop:"4px"}}><strong style={{color:"green"}}>Bio:</strong> <br /> <br />{singleProfile.description}</Card.Text>
       </div>
     </Card.Body>
   </Card>
